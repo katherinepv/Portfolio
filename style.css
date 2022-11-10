@@ -1,1 +1,21 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.technical-skills {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer {
+  display: grid;
+}
+
+.footer.last-child {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}/*# sourceMappingURL=style.css.map */
