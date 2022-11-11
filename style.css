@@ -43,7 +43,39 @@ body {
 .about .about__paragraph {
   font-family: "Hind", sans-serif;
   color: rgb(47, 47, 47);
+  font-size: 1rem;
   padding: 1rem;
+}
+
+.skills .skills__title {
+  font: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #119539;
+  text-align: center;
+  padding: 1rem;
+}
+.skills .skills__intro {
+  font: "Hind", sans-serif;
+  color: rgb(47, 47, 47);
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+.skills .skills__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+.skills .skills__container p {
+  color: #119539;
+  text-align: center;
+}
+.skills .skills__container img {
+  width: 3rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #projects__secondary {
