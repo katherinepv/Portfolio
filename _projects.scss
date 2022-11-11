@@ -1,5 +1,9 @@
 @use "./variables" as *;
 
+#projects__secondary {
+    display: none;
+}
+
 #projects {
     h1 {
         font-family: $primary-font;
@@ -10,37 +14,47 @@
     }
 }
 
-    .card {
-        width: 30rem;
-        background-color: $foreground-color;
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $foreground-color;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.75rem;
 
-        .card__image {
-            width: 100%;
-        }
-
-        .card__image-descriptor {
-            font-size: 1rem;
-            font-family: $primary-font;
-        }
-
-        .card__header {
-            font-size: 2rem;
-            font-family: $primary-font;
-            color: $text-color;
-        }
-
-        .card__paragraph {
-            font-size: 1rem;
-            font-family: $secondary-font;
-            color: $text-color-secondary;
-            padding: 0.5rem;
-
-        }
+    .card__image {
+        width: 100%;
     }
 
+    .card__image-descriptor {
+        font-size: 1rem;
+        font-family: $primary-font;
+    }
 
+    .card__header {
+        font-size: 2rem;
+        font-family: $primary-font;
+        color: $text-color;
+    }
 
+    .card__paragraph {
+        font-size: 1rem;
+        font-family: $secondary-font;
+        color: $text-color-secondary;
+        padding: 0.5rem;
+    }
+    .card__button, .card__button--secondary {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: $primary-font;
+        color: $text-color;
+        background-color: $background-color;
+        border-radius: 0.75rem;
+        border-color: $text-color;
+        gap: 0.5rem;
+        padding: 0.5rem;
 
-// #projects__secondary {
-//     display: none;
-// }
+    }
+}

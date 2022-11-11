@@ -79,6 +79,10 @@ body {
   margin-left: auto;
 }
 
+#projects__secondary {
+  display: none;
+}
+
 #projects h1 {
   font-family: "Montserrat", sans-serif;
   color: #119539;
@@ -88,8 +92,14 @@ body {
 }
 
 .card {
-  width: 30rem;
-  background-color: #c6ecd2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbf3e3;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.75rem;
 }
 .card .card__image {
   width: 100%;
@@ -107,6 +117,17 @@ body {
   font-size: 1rem;
   font-family: "Hind", sans-serif;
   color: rgb(47, 47, 47);
+  padding: 0.5rem;
+}
+.card .card__button, .card .card__button--secondary {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #119539;
+  background-color: white;
+  border-radius: 0.75rem;
+  border-color: #119539;
+  gap: 0.5rem;
   padding: 0.5rem;
 }
 
