@@ -7,9 +7,37 @@
         text-align: center;
         font-size: 2rem;
         padding: 1rem;
-
     }
 }
+
+    .card {
+        width: 30rem;
+        background-color: $foreground-color;
+
+        .card__image {
+            width: 100%;
+        }
+
+        .card__image-descriptor {
+            font-size: 1rem;
+            font-family: $primary-font;
+        }
+
+        .card__header {
+            font-size: 2rem;
+            font-family: $primary-font;
+            color: $text-color;
+        }
+
+        .card__paragraph {
+            font-size: 1rem;
+            font-family: $secondary-font;
+            color: $text-color-secondary;
+            padding: 0.5rem;
+
+        }
+    }
+
 
 
 

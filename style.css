@@ -87,6 +87,29 @@ body {
   padding: 1rem;
 }
 
+.card {
+  width: 30rem;
+  background-color: #c6ecd2;
+}
+.card .card__image {
+  width: 100%;
+}
+.card .card__image-descriptor {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.card .card__header {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #119539;
+}
+.card .card__paragraph {
+  font-size: 1rem;
+  font-family: "Hind", sans-serif;
+  color: rgb(47, 47, 47);
+  padding: 0.5rem;
+}
+
 header {
   padding-top: 1rem;
 }
