@@ -1,0 +1,10 @@
+@use "variables";
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    #nav-bar {
+        display:none;
+    }
+}
