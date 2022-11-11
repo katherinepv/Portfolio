@@ -8,17 +8,17 @@
     <title>Katherine's Portfolio</title>
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav-bar">
         <p>Katherine Villacis</p>
         <a href="#home">Home</a>
         <a href="#about-me">About</a>
         <a href="#projects">Projects</a>
         <a href="#get-in-touch">Get In Touch</a>
     </nav>
-    <header id="home">
-        <h1>Hey! I'm Katherine Villacis</h1>
-        <h2>A Junior Software Developer based in London, England.</h2>
-        <img src="programmer_icon.png" alt="Female Software Developer" width="150px">
+    <header class="intro">
+        <h1 class="intro__name">Hey! I'm Katherine Villacis</h1>
+        <h2 class="into__occupation">A Junior Software Developer based in London, England.</h2>
+        <img class="intro__image" src="programmer_icon.png" alt="Female Software Developer" width="300px">
     </header>
     <main>
         <div id="about-me">
@@ -43,6 +43,7 @@
             </div>
 
         </div>
+
         <div id="projects">
             <h1>My Projects</h1>
             <div class="card">
@@ -75,6 +76,9 @@
                     <button class="card__button--secondary">Preview</button>
                 </main>
             </div>
+        </div>
+
+        <div id="projects__secondary">
             <div class="card">
                 <img class="card__image" scr="" alt="Project Image" width="700px">
                 <main class="card__content">
@@ -105,6 +109,8 @@
                     <button class="card__button--secondary">Preview</button>
                 </main>
             </div>
+        </div>
+
         <br>
         <footer id="get-in-touch">
             <button>Github</button>

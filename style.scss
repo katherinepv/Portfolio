@@ -1,9 +1,9 @@
 @use "./nav";
 @use "./reset";
 @use "./variables" as *;
-@use "./reset";
 @use "./body";
-
+@use "./projects";
+@use "./header";
 
 // .technical-skills {
 //     display: grid;

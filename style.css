@@ -1,25 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
+nav {
+  display: none;
+  text-align: center;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: unset;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   padding: 2px;
 }
 
-.technical-skills {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-.footer {
-  display: grid;
+#projects__secondary {
+  display: none;
 }
 
-.footer.last-child {
-  grid-column-start: 1;
-  grid-column-end: 4;
+header {
+  padding-top: 1rem;
+}
+header h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: rgb(47, 47, 47);
+  padding: 1rem;
+}
+header h2 {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: #119539;
+  padding: 1rem;
+}
+header .intro__image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .intro__image {
+    display: unset;
+  }
 }/*# sourceMappingURL=style.css.map */
