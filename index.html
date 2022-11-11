@@ -1,127 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Katherine's Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="nav-bar">
-        <p>Katherine Villacis</p>
-        <a href="#home">Home</a>
-        <a href="#about-me">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#get-in-touch">Get In Touch</a>
+      <p>Katherine Villacis</p>
+      <a href="#home">Home</a>
+      <a href="#about-me">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#get-in-touch">Get In Touch</a>
     </nav>
     <header class="intro">
-        <h1 class="intro__name">Hey! I'm Katherine Villacis</h1>
-        <h2 class="into__occupation">A Junior Software Developer based in London, England.</h2>
-        <img class="intro__image" src="programmer_icon.png" alt="Female Software Developer" width="300px">
+      <h1 class="intro__name">Hey! I'm Katherine Villacis.</h1>
+      <h2 class="into__occupation">
+        A Junior Software Developer based in London, England.
+      </h2>
+      <img
+        class="intro__image"
+        src="programmer_icon.png"
+        alt="Female Software Developer"
+        width="300px"
+      />
     </header>
     <main>
-        <div id="about-me">
-            <h3>About Me</h3>
-            <img src="kat_portfolio_pic.png" alt="Katherine" width="300px">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad illo autem praesentium fugit aliquam culpa cum vitae aspernatur, magnam commodi laboriosam sint cupiditate quas rerum quasi officia deleniti tempore quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, consectetur aspernatur laboriosam animi libero id assumenda similique dolorum nemo laudantium soluta sunt deleniti corporis qui distinctio repudiandae ipsa, quia esse.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis expedita delectus, soluta a natus tenetur pariatur iure ipsum porro, consequuntur cupiditate eum officiis corporis quidem necessitatibus corrupti officia non quisquam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, reiciendis fugiat veritatis architecto ullam a? A error sequi, culpa officia, recusandae facilis ex cumque enim aperiam et maxime, soluta at!</p>
+      <div class="about">
+        <h3 class="about__title">About Me</h3>
+        <img
+          class="about__image"
+          src="kat_portfolio_pic.png"
+          alt="Katherine"
+          width="300px"
+        />
+        <p class="about__paragraph">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad illo
+          autem praesentium fugit aliquam culpa cum vitae aspernatur, magnam
+          commodi laboriosam sint cupiditate quas rerum quasi officia deleniti
+          tempore quam. Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Magnam, consectetur aspernatur laboriosam animi libero id
+          assumenda similique dolorum nemo laudantium soluta sunt deleniti
+          corporis qui distinctio repudiandae ipsa, quia esse.
+        </p>
+        <p class="about__paragraph">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+          expedita delectus, soluta a natus tenetur pariatur iure ipsum porro,
+          consequuntur cupiditate eum officiis corporis quidem necessitatibus
+          corrupti officia non quisquam! Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Quis, reiciendis fugiat veritatis architecto ullam
+          a? A error sequi, culpa officia, recusandae facilis ex cumque enim
+          aperiam et maxime, soluta at!
+        </p>
+      </div>
+      <div class="skills">
+        <h4 class="skills__title">Technical SKills</h4>
+        <p class="skills__intro">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          reiciendis minus magnam laudantium nam, quia obcaecati corrupti
+          molestiae nulla consectetur non eius reprehenderit nisi. Omnis dolore
+          quas hic alias asperiores?
+        </p>
+        <div class="skills__container">
+          <div class="skills__container--item">
+            <img src="" alt="Spring Boot Logo" />
+            <p>Spring Boot</p>
+          </div>
+          <div class="skills__container--item">
+            <img src="" alt="Java Logo" />
+            <p>Java</p>
+          </div>
+          <div class="skills__container--item">
+            <img src="" alt="React Logo" />
+            <p>React</p>
+          </div>
+          <div class="skills__container--item">
+            <img src="" alt="BEM Logo" />
+            <p>BEM</p>
+          </div>
+          <div class="skills__container--item">
+            <img src="" alt="SCSS Logo" />
+            <p>SCSS</p>
+          </div>
+          <div class="skills__container--item">
+            <img src="" alt="JavaScript Logo" />
+            <p>JavaScript</p>
+          </div>
+          <div class="skills__container--item">
+            <img src="" alt="CSS3 Logo" />
+            <p>CSS3</p>
+          </div>
+          <div class="skills__container--item">
+            <img src="" alt="HTML5 Logo" />
+            <p>HTML5</p>
+          </div>
+          <div class="skills__container--item">
+            <img src="" alt="Git Logo" />
+            <p>Git</p>
+          </div>
         </div>
-        <div>
-            <h4>Technical SKills</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis minus magnam laudantium nam, quia obcaecati corrupti molestiae nulla consectetur non eius reprehenderit nisi. Omnis dolore quas hic alias asperiores?</p>
-            <div class="technical-skills">
-                <p>Spring Boot</p>
-                <p>Java</p>
-                <p>React</p>
-                <p>BEM</p>
-                <p>SCSS</p>
-                <p>JavaScript</p>
-                <p>CSS3</p>
-                <p>HTML5</p>
-                <p>Git</p>
-            </div>
+      </div>
 
+      <div id="projects">
+        <h1>My Projects</h1>
+        <div class="card">
+          <img class="card__image" scr="" alt="Project Image" width="700px" />
+          <main class="card__content">
+            <h2 class="card__image-descriptor">REACT</h2>
+            <h3 class="card__header">Client Project</h3>
+            <p class="card__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+              omnis voluptatum mollitia provident fugiat, dignissimos quisquam
+              eaque quidem voluptates nam tempora temporibus iste culpa cumque
+              quo ipsam aut! Reprehenderit, laudantium.
+            </p>
+            <button class="card__button">Code</button>
+            <button class="card__button--secondary">Preview</button>
+          </main>
         </div>
-
-        <div id="projects">
-            <h1>My Projects</h1>
-            <div class="card">
-                <img class="card__image" scr="" alt="Project Image" width="700px">
-                <main class="card__content">
-                    <h2 class="card__image-descriptor">REACT</h2>
-                    <h3 class="card__header">Client Project</h3>
-                    <p class="card__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur omnis voluptatum mollitia provident fugiat, dignissimos quisquam eaque quidem voluptates nam tempora temporibus iste culpa cumque quo ipsam aut! Reprehenderit, laudantium.</p>
-                    <button class="card__button">Code</button>
-                    <button class="card__button--secondary">Preview</button>
-                </main>
-            </div>
-            <div class="card">
-                <img class="card__image" scr="" alt="Project Image" width="700px">
-                <main class="card__content">
-                    <h2 class="card__image-descriptor">REACT</h2>
-                    <h3 class="card__header">Client Project</h3>
-                    <p class="card__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur omnis voluptatum mollitia provident fugiat, dignissimos quisquam eaque quidem voluptates nam tempora temporibus iste culpa cumque quo ipsam aut! Reprehenderit, laudantium.</p>
-                    <button class="card__button">Code</button>
-                    <button class="card__button--secondary">Preview</button>
-                </main>
-            </div>
-            <div class="card">
-                <img class="card__image" scr="" alt="Project Image" width="700px">
-                <main class="card__content">
-                    <h2 class="card__image-descriptor">REACT</h2>
-                    <h3 class="card__header">Client Project</h3>
-                    <p class="card__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur omnis voluptatum mollitia provident fugiat, dignissimos quisquam eaque quidem voluptates nam tempora temporibus iste culpa cumque quo ipsam aut! Reprehenderit, laudantium.</p>
-                    <button class="card__button">Code</button>
-                    <button class="card__button--secondary">Preview</button>
-                </main>
-            </div>
+        <div class="card">
+          <img class="card__image" scr="" alt="Project Image" width="700px" />
+          <main class="card__content">
+            <h2 class="card__image-descriptor">REACT</h2>
+            <h3 class="card__header">Client Project</h3>
+            <p class="card__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+              omnis voluptatum mollitia provident fugiat, dignissimos quisquam
+              eaque quidem voluptates nam tempora temporibus iste culpa cumque
+              quo ipsam aut! Reprehenderit, laudantium.
+            </p>
+            <button class="card__button">Code</button>
+            <button class="card__button--secondary">Preview</button>
+          </main>
         </div>
-
-        <div id="projects__secondary">
-            <div class="card">
-                <img class="card__image" scr="" alt="Project Image" width="700px">
-                <main class="card__content">
-                    <h2 class="card__image-descriptor">REACT</h2>
-                    <h3 class="card__header">Client Project</h3>
-                    <p class="card__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur omnis voluptatum mollitia provident fugiat, dignissimos quisquam eaque quidem voluptates nam tempora temporibus iste culpa cumque quo ipsam aut! Reprehenderit, laudantium.</p>
-                    <button class="card__button">Code</button>
-                    <button class="card__button--secondary">Preview</button>
-                </main>
-            </div>
-            <div class="card">
-                <img class="card__image" scr="" alt="Project Image" width="700px">
-                <main class="card__content">
-                    <h2 class="card__image-descriptor">REACT</h2>
-                    <h3 class="card__header">Client Project</h3>
-                    <p class="card__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur omnis voluptatum mollitia provident fugiat, dignissimos quisquam eaque quidem voluptates nam tempora temporibus iste culpa cumque quo ipsam aut! Reprehenderit, laudantium.</p>
-                    <button class="card__button">Code</button>
-                    <button class="card__button--secondary">Preview</button>
-                </main>
-            </div>
-            <div class="card">
-                <img class="card__image" scr="" alt="Project Image" width="700px">
-                <main class="card__content">
-                    <h2 class="card__image-descriptor">REACT</h2>
-                    <h3 class="card__header">Client Project</h3>
-                    <p class="card__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur omnis voluptatum mollitia provident fugiat, dignissimos quisquam eaque quidem voluptates nam tempora temporibus iste culpa cumque quo ipsam aut! Reprehenderit, laudantium.</p>
-                    <button class="card__button">Code</button>
-                    <button class="card__button--secondary">Preview</button>
-                </main>
-            </div>
+        <div class="card">
+          <img class="card__image" scr="" alt="Project Image" width="700px" />
+          <main class="card__content">
+            <h2 class="card__image-descriptor">REACT</h2>
+            <h3 class="card__header">Client Project</h3>
+            <p class="card__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+              omnis voluptatum mollitia provident fugiat, dignissimos quisquam
+              eaque quidem voluptates nam tempora temporibus iste culpa cumque
+              quo ipsam aut! Reprehenderit, laudantium.
+            </p>
+            <button class="card__button">Code</button>
+            <button class="card__button--secondary">Preview</button>
+          </main>
         </div>
+      </div>
 
-        <br>
-        <footer id="get-in-touch">
-            <button>Github</button>
-            <button>LinkedIn</button>
-            <button>CV</button>
-            <a href="katherine.villacis@nology.io">katherine.villacis@nology.io</a>
-        </footer>
+      <div id="projects__secondary">
+        <div class="card">
+          <img class="card__image" scr="" alt="Project Image" width="700px" />
+          <main class="card__content">
+            <h2 class="card__image-descriptor">REACT</h2>
+            <h3 class="card__header">Client Project</h3>
+            <p class="card__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+              omnis voluptatum mollitia provident fugiat, dignissimos quisquam
+              eaque quidem voluptates nam tempora temporibus iste culpa cumque
+              quo ipsam aut! Reprehenderit, laudantium.
+            </p>
+            <button class="card__button">Code</button>
+            <button class="card__button--secondary">Preview</button>
+          </main>
+        </div>
+        <div class="card">
+          <img class="card__image" scr="" alt="Project Image" width="700px" />
+          <main class="card__content">
+            <h2 class="card__image-descriptor">REACT</h2>
+            <h3 class="card__header">Client Project</h3>
+            <p class="card__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+              omnis voluptatum mollitia provident fugiat, dignissimos quisquam
+              eaque quidem voluptates nam tempora temporibus iste culpa cumque
+              quo ipsam aut! Reprehenderit, laudantium.
+            </p>
+            <button class="card__button">Code</button>
+            <button class="card__button--secondary">Preview</button>
+          </main>
+        </div>
+        <div class="card">
+          <img class="card__image" scr="" alt="Project Image" width="700px" />
+          <main class="card__content">
+            <h2 class="card__image-descriptor">REACT</h2>
+            <h3 class="card__header">Client Project</h3>
+            <p class="card__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+              omnis voluptatum mollitia provident fugiat, dignissimos quisquam
+              eaque quidem voluptates nam tempora temporibus iste culpa cumque
+              quo ipsam aut! Reprehenderit, laudantium.
+            </p>
+            <button class="card__button">Code</button>
+            <button class="card__button--secondary">Preview</button>
+          </main>
+        </div>
+      </div>
 
+      <br />
+      <footer id="get-in-touch">
+        <button>Github</button>
+        <button>LinkedIn</button>
+        <button>CV</button>
+        <a href="katherine.villacis@nology.io">katherine.villacis@nology.io</a>
+      </footer>
     </main>
     <aside></aside>
-
-    
-</body>
+  </body>
 </html>

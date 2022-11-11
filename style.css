@@ -26,6 +26,26 @@ body {
   flex-direction: column;
 }
 
+.about .about__title {
+  font-family: "Montserrat", sans-serif;
+  color: #119539;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.about .about__image {
+  width: 20rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+}
+.about .about__paragraph {
+  font-family: "Hind", sans-serif;
+  color: rgb(47, 47, 47);
+  padding: 1rem;
+}
+
 #projects__secondary {
   display: none;
 }
@@ -34,7 +54,7 @@ header {
   padding-top: 1rem;
 }
 header h1 {
-  text-align: center;
+  text-align: left;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   color: rgb(47, 47, 47);
