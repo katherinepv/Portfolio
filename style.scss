@@ -1,21 +1,23 @@
-@use "reset";
-@use "variables" as *;
-@use "body";
-@use "nav";
+@use "./nav";
+@use "./reset";
+@use "./variables" as *;
+@use "./reset";
+@use "./body";
 
-.technical-skills {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
-.footer {
-    display: grid;
-    // grid-template-columns:1fr 1fr 1fr;
-    // grid-template-rows: 1fr 1fr;
+// .technical-skills {
+//     display: grid;
+//     grid-template-rows: 1fr 1fr 1fr;
+//     grid-template-columns: 1fr 1fr 1fr;
+// }
+
+// .footer {
+//     display: grid;
+//     // grid-template-columns:1fr 1fr 1fr;
+//     // grid-template-rows: 1fr 1fr;
    
-}
-.footer.last-child {
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
+// }
+// .footer.last-child {
+//     grid-column-start: 1;
+//     grid-column-end: 4;
+// }
