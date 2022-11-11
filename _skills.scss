@@ -2,15 +2,15 @@
 
 .skills {
     .skills__title {
-        font: $primary-font;
+        font-family: $primary-font;
         font-size: 2rem;
         color: $text-color;
         text-align: center;
         padding: 1rem;
     }
     .skills__intro {
-        font: $secondary-font;
         color: $text-color-secondary;
+        font-family: $secondary-font;
         font-size: 1rem;
         text-align: center;
         padding: 1rem;
@@ -20,6 +20,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: 1fr 1fr 1fr;
         gap: 0.5rem;
+        padding: 1rem;
 
         p {
             color: $text-color;

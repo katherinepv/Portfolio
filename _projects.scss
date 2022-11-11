@@ -1,4 +1,18 @@
+@use "./variables" as *;
 
-#projects__secondary {
-    display: none;
+#projects {
+    h1 {
+        font-family: $primary-font;
+        color: $text-color;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+
+    }
 }
+
+
+
+// #projects__secondary {
+//     display: none;
+// }
