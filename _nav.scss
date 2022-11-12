@@ -3,7 +3,6 @@
 .nav-bar {
     text-align: center;
     font-family: $secondary-font;
-    font-weight: 400;
     height: 3rem;
     margin: 3rem 9rem;
     display: none;
@@ -15,16 +14,38 @@
     .nav-bar {
         display: unset;
         display: grid;
-        grid-template-columns: 6fr 2fr 2fr 2fr 2fr;
-        font-size: large;
+        grid-template-columns: 10fr 3fr 3fr 3fr 3fr;
+        font-size: 20rem;
 
         .nav-bar__name {
             text-align: left;
+            padding: 0.5rem;
+            text-decoration: none;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        .nav-bar__home,
+        .nav-bar__about,
+        .nav-bar__projects {
+            padding: 0.5rem;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .nav-bar__getInTouch {
+            background-color: $foreground-color;
+            color: black;
+            padding: 0.5rem;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
             border-color: $text-color;
-            border-width: 0.1rem;
+            border-width: 0.2rem;
             border-radius: 0.25rem;
         }
     }
