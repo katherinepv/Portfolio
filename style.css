@@ -159,20 +159,23 @@ header .intro__image {
   }
 }
 .footer {
-  width: 100%;
+  width: 100vw;
   height: 13.5rem;
-  padding: 1rem 2rem 1rem 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  background-color: rgb(47, 47, 47);
+  padding: 3rem 6rem 3rem 6rem;
+  background-color: black;
+  align-items: center;
 }
-.footer .footer:last-child {
-  grid-column-start: 1;
-  grid-column-end: 4;
+.footer .footer__images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .footer .footer__email {
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,25 +1,26 @@
 @use "./variables" as *;
 
 .footer {
-    width: 100%;
+    width: 100vw;
     height: 13.5rem;
-    padding: 1rem 2rem 1rem 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    background-color: $text-color-secondary;
+    padding: 3rem 6rem 3rem 6rem;
+    background-color: black;
+    align-items: center;
 
-    .footer:last-child {
-        grid-column-start: 1;
-        grid-column-end: 4;
+    .footer__images {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .footer__email {
         font-family: $primary-font;
         color: $text-color-tertiary;
         font-size: 1rem;
-        // display: flex;
-        // align-items: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
 
     }
 }
