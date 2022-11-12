@@ -1,15 +1,33 @@
 @use "./variables" as *;
 
-nav {
-    display: none;
+.nav-bar {
     text-align: center;
     font-family: $secondary-font;
     font-weight: 400;
+    height: 3rem;
+    margin: 3rem 9rem;
+    display: none;
 }
+    
 
-@media screen and (min-width: 768px) {
-    nav {
+
+@media screen and (min-width: 1024px) {
+    .nav-bar {
         display: unset;
+        display: grid;
+        grid-template-columns: 6fr 2fr 2fr 2fr 2fr;
+        font-size: large;
+
+        .nav-bar__name {
+            text-align: left;
+        }
+
+        .nav-bar__getInTouch {
+            border-color: $text-color;
+            border-width: 0.1rem;
+            border-radius: 0.25rem;
+        }
     }
 }
+
 

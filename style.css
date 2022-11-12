@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
-nav {
-  display: none;
-  text-align: center;
-  font-family: "Hind", sans-serif;
-  font-weight: 400;
-}
-
-@media screen and (min-width: 768px) {
-  nav {
-    display: unset;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -21,11 +9,31 @@ nav {
   padding: 2px;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+.nav-bar {
+  text-align: center;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+  height: 3rem;
+  margin: 3rem 9rem;
+  display: none;
 }
 
+@media screen and (min-width: 1024px) {
+  .nav-bar {
+    display: unset;
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr 2fr 2fr;
+    font-size: large;
+  }
+  .nav-bar .nav-bar__name {
+    text-align: left;
+  }
+  .nav-bar .nav-bar__getInTouch {
+    border-color: #119539;
+    border-width: 0.1rem;
+    border-radius: 0.25rem;
+  }
+}
 .about .about__title {
   font-family: "Montserrat", sans-serif;
   color: #119539;
