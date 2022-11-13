@@ -36,8 +36,32 @@
 
         }
     }
-}
+
 
 @media screen and (min-width: 1024px) {
+    
+        display: unset;
+        .skills__title {
+            font-size: 3rem;
+            text-align: center;
+        }
+        .skills__intro {
+            font-size: 1rem;
+            width: 30.25rem;
+            margin: auto;
+            
+        }
+        .skills__container {
+            display: flex;
+            flex: auto;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 1.5rem;
+            
+
+        }
+        
+    }
+    
 
 }
