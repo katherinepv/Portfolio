@@ -1,11 +1,11 @@
 @use "./variables" as *;
 
-#projects__secondary {
+.projects__secondary {
     display: none;
 }
 
-#projects {
-    h1 {
+.projects {
+    .projects__title {
         font-family: $primary-font;
         color: $text-color;
         text-align: center;
@@ -75,5 +75,16 @@
         
 
     }
+
+@media screen and (min-width: 1024px) {
+    
+
+    #projects__secondary {
+        display: unset;
+    }
+
+    
+}
+
 }
 

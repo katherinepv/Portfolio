@@ -94,6 +94,7 @@
   }
   .about .about__title {
     grid-area: title;
+    font-size: 3rem;
     text-align: left;
     padding: 10rem 0 0 10rem;
   }
@@ -157,11 +158,11 @@
   }
 }
 
-#projects__secondary {
+.projects__secondary {
   display: none;
 }
 
-#projects h1 {
+.projects .projects__title {
   font-family: "Montserrat", sans-serif;
   color: #119539;
   text-align: center;
@@ -208,6 +209,11 @@
   border-width: 0.3rem;
   gap: 0.5rem;
   padding: 0.3rem;
+}
+@media screen and (min-width: 1024px) {
+  .card #projects__secondary {
+    display: unset;
+  }
 }
 
 .intro {
