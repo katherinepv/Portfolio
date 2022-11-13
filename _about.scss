@@ -22,4 +22,37 @@
         font-size: 1rem;
         padding: 1rem;
     }
+
+
+    @media screen and (min-width: 1024px) {
+        margin: 3rem 11.25rem;
+        display: grid;
+        grid-template-areas:
+        "image title"
+        "image text";
+        grid-gap: 1rem;
+
+        .about__image {
+            width: 30rem;
+            grid-area: image;
+        }
+        .about__text {
+            grid-area: text;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about__title {
+            grid-area: title;
+            text-align: left;
+            padding: 10rem 0 0 10rem;
+        }
+        .about__paragraph {
+            grid-area: text;
+            text-align: justify;
+            padding: 0 0 0 10rem;
+        }
+    
+}
+
 }
