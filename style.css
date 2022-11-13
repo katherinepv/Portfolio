@@ -161,32 +161,55 @@
   padding: 0.3rem;
 }
 
-header {
+.intro {
   padding-top: 1rem;
 }
-header h1 {
+.intro .intro__name {
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   color: rgb(47, 47, 47);
   padding: 1rem;
 }
-header h2 {
+.intro .intro__occupation {
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   color: #119539;
   padding: 1rem;
 }
-header .intro__image {
+.intro .intro__image {
   display: none;
 }
-
-@media screen and (min-width: 768px) {
-  .intro__image {
+@media screen and (min-width: 1024px) {
+  .intro {
+    margin: 3rem 11.5rem;
+    display: grid;
+    grid-template-areas: "name image" "occupation image";
+    grid-gap: 1rem;
+  }
+  .intro .intro__image {
     display: unset;
   }
+  .intro .intro {
+    display: grid;
+    grid-template-areas: "name image" "occupation image";
+    grid-gap: 1rem;
+  }
+  .intro .intro__image {
+    grid-area: image;
+  }
+  .intro .intro__name {
+    grid-area: name;
+    text-align: start;
+    display: flex;
+    align-items: flex-end;
+  }
+  .intro .intro__occupation {
+    grid-area: occupation;
+  }
 }
+
 .footer {
   width: 100vw;
   height: 13.5rem;
