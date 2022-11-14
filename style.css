@@ -91,6 +91,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
   }
   .about .about__title {
     grid-area: title;
@@ -305,10 +306,10 @@
   .intro .intro {
     display: grid;
     grid-template-areas: "name image" "occupation image";
-    grid-gap: 1rem;
   }
   .intro .intro__image {
     grid-area: image;
+    width: 30rem;
   }
   .intro .intro__name {
     grid-area: name;
@@ -318,6 +319,9 @@
   }
   .intro .intro__occupation {
     grid-area: occupation;
+    font-size: 4rem;
+    padding: 0 15rem 0 0;
+    text-align: left;
   }
 }
 
@@ -341,4 +345,29 @@
   display: flex;
   justify-content: center;
   padding: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-areas: "email github linkedin cv";
+    padding: 2rem 5rem;
+  }
+  .footer .footer__email {
+    grid-area: email;
+    text-align: left;
+    width: 7fr;
+  }
+  .footer .footer__images--github {
+    grid-area: github;
+    width: 1fr;
+  }
+  .footer .footer__images--linkedin {
+    grid-area: linkedin;
+    width: 1fr;
+  }
+  .footer .footer__images--cv {
+    grid-area: cv;
+    width: 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */

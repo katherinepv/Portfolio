@@ -38,11 +38,13 @@
         grid-template-areas:
         "name image"
         "occupation image";
-        grid-gap: 1rem;
+        // grid-gap: 20rem;
     }
     
     .intro__image {
         grid-area: image;
+        width: 30rem;
+    
     }
 
     .intro__name {
@@ -55,6 +57,9 @@
 
     .intro__occupation {
         grid-area: occupation;
+        font-size: 4rem;
+        padding: 0 15rem 0 0;
+        text-align: left;
     }
 
 
