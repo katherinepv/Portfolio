@@ -1,7 +1,6 @@
 @use "./reset";
 @use "./variables" as *;
 @use "./nav";
-@use "./body";
 @use "./about";
 @use "./skills";
 @use "./projects";
@@ -18,7 +17,7 @@
 //     display: grid;
 //     // grid-template-columns:1fr 1fr 1fr;
 //     // grid-template-rows: 1fr 1fr;
-   
+
 // }
 // .footer.last-child {
 //     grid-column-start: 1;

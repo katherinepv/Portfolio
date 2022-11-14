@@ -19,9 +19,9 @@
 .card--one,
 .card--two,
 .card--three {
-// .card--four,
-// .card--five,
-// .card--six {
+    // .card--four,
+    // .card--five,
+    // .card--six {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,77 +31,62 @@
     margin: 1rem;
     border-radius: 0.75rem;
 }
-    .card__image {
-        width: 100%;
-    }
 
-    .card__image-descriptor {
-        font-size: 1rem;
-        font-family: $primary-font;
-    }
+.card__image {
+    width: 100%;
+}
 
-    .card__header {
-        font-size: 2rem;
-        font-family: $primary-font;
-        color: $text-color;
-    }
+.card__image-descriptor {
+    font-size: 1rem;
+    font-family: $primary-font;
+}
 
-    .card__paragraph {
-        font-size: 1rem;
-        font-family: $secondary-font;
-        color: $text-color-secondary;
-        padding: 0.5rem;
-    }
+.card__header {
+    font-size: 2rem;
+    font-family: $primary-font;
+    color: $text-color;
+}
 
-    // #buttons {
-    //     // display: flex;
-    //     // align-items: center;
-    //     // text-align:start;
-    //     // align-self: center;
-    //     // display: block;
-    //     // margin-top: auto;
-    //     // margin-bottom: auto;
-    // }
-    .card__button, .card__button--secondary {
-        // display: flex;
-        // align-items: center;
-        // text-align: center;
-        // flex-direction: row;
-        // justify-content: center;
-        // flex-basis: auto;
-        font-size: 1.25rem;
-        font-weight: bold;
-        font-family: $primary-font;
-        color: $text-color;
-        background-color: $background-color;
-        border-radius: 0.75rem;
-        border-color: $text-color;
-        border-width: 0.3rem;
-        gap: 0.5rem;
-        padding: 0.3rem;
-        
+.card__paragraph {
+    font-size: 1rem;
+    font-family: $secondary-font;
+    color: $text-color-secondary;
+    padding: 0.5rem;
+}
 
+.card__button,
+.card__button--secondary {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: $primary-font;
+    color: $text-color;
+    text-align: start;
+    background-color: $background-color;
+    border-radius: 0.75rem;
+    border-color: $text-color;
+    border-width: 0.3rem;
+
+    img {
+        padding: 0.2rem 0 0 0;
     }
+}
 
 
 @media screen and (min-width: 1024px) {
     .projects {
         margin: 4rem 1rem;
+
         .projects__title {
             font-size: 3rem;
             margin: 0 0 2rem 0;
         }
     }
-    
-    
-    
+
     .card--four,
     .card--five,
     .card--six {
         display: block;
     }
-
-    
 
     .card--one,
     .card--two,
@@ -119,36 +104,45 @@
         border-radius: 0.75rem;
     }
 
-    
-
     .projects__cards {
         display: grid;
         grid-template-areas:
-        "one two three"
-        "four five six";
+            "one two three"
+            "four five six";
         gap: 0.5rem;
     }
 
     .card--one {
         grid-area: one;
     }
+
     .card--two {
         grid-area: two;
     }
+
     .card--three {
         grid-area: three;
     }
+
     .card--four {
         grid-area: four;
     }
+
     .card--five {
         grid-area: five;
     }
+
     .card--six {
         grid-area: six;
     }
 
-    
+    .card--one:hover,
+    .card--two:hover,
+    .card--three:hover,
+    .card--four:hover,
+    .card--five:hover,
+    .card--six:hover {
+        box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem $text-color;
+    }
+
 }
-
-

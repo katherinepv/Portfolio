@@ -208,17 +208,21 @@
   padding: 0.5rem;
 }
 
-.card__button, .card__button--secondary {
+.card__button,
+.card__button--secondary {
   font-size: 1.25rem;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   color: #119539;
+  text-align: start;
   background-color: white;
   border-radius: 0.75rem;
   border-color: #119539;
   border-width: 0.3rem;
-  gap: 0.5rem;
-  padding: 0.3rem;
+}
+.card__button img,
+.card__button--secondary img {
+  padding: 0.2rem 0 0 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -271,6 +275,14 @@
   }
   .card--six {
     grid-area: six;
+  }
+  .card--one:hover,
+.card--two:hover,
+.card--three:hover,
+.card--four:hover,
+.card--five:hover,
+.card--six:hover {
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #119539;
   }
 }
 .intro {
