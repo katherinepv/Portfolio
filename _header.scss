@@ -23,51 +23,77 @@
         display: none;
 
     }
+}
 
-    @media screen and (min-width: 1024px) {
-        .intro__image {
-            display: unset;
-        }
+@media screen and (min-width: 1024px) {
+    //     .intro__image {
+    //         display: unset;
+    //     }
 
-        margin: 3rem 11.5rem;
-        display: grid;
-        grid-template-areas: "name image"
-        "occupation image";
-        grid-gap: 1rem;
+    //     margin: 3rem 11.5rem;
+    //     display: grid;
+    //     grid-template-areas: "name image"
+    //     "occupation image";
+    //     grid-gap: 1rem;
 
-        .intro {
-            display: grid;
-            grid-template-areas:
-                "name image"
-                "occupation image";
-            // grid-gap: 20rem;
-        }
+    //     .intro {
+    //         display: grid;
+    //         grid-template-areas:
+    //             "name image"
+    //             "occupation image";
+    //         // grid-gap: 20rem;
+    //     }
 
-        .intro__image {
-            grid-area: image;
-            width: 30rem;
+    //     .intro__image {
+    //         grid-area: image;
+    //         width: 30rem;
 
-        }
+    //     }
+
+    //     .intro__name {
+    //         grid-area: name;
+    //         text-align: start;
+    //         display: flex;
+    //         align-items: flex-end;
+    //         font-size: 2rem;
+
+    //     }
+
+    //     .intro__occupation {
+    //         grid-area: occupation;
+    //         font-size: 4rem;
+    //         padding: 0 15rem 0 0;
+    //         text-align: left;
+    //     }
+    // }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100rem;
+        height: 53rem;
+        background-color: $foreground-color;
+        text-align: center;
 
         .intro__name {
-            grid-area: name;
-            text-align: start;
-            display: flex;
-            align-items: flex-end;
             font-size: 2rem;
-
+            color: $text-color-secondary;
+            align-self: center;
         }
 
         .intro__occupation {
-            grid-area: occupation;
             font-size: 4rem;
-            padding: 0 15rem 0 0;
-            text-align: left;
+            color: $text-color;
+            text-align: center;
+            width: 70rem;
+            padding: 2rem;
         }
-
-
     }
 }
+
 
 
 

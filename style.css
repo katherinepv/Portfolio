@@ -61,7 +61,7 @@
     border-style: solid;
     border-color: #119539;
     border-width: 0.2rem;
-    border-radius: 0.25rem;
+    border-radius: 0.8rem;
   }
 }
 .about .about__title {
@@ -312,39 +312,32 @@
 .intro .intro__image {
   display: none;
 }
+
 @media screen and (min-width: 1024px) {
   .intro {
-    margin: 3rem 11.5rem;
-    display: grid;
-    grid-template-areas: "name image" "occupation image";
-    grid-gap: 1rem;
-  }
-  .intro .intro__image {
-    display: unset;
-  }
-  .intro .intro {
-    display: grid;
-    grid-template-areas: "name image" "occupation image";
-  }
-  .intro .intro__image {
-    grid-area: image;
-    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100rem;
+    height: 53rem;
+    background-color: #dbf3e3;
+    text-align: center;
   }
   .intro .intro__name {
-    grid-area: name;
-    text-align: start;
-    display: flex;
-    align-items: flex-end;
     font-size: 2rem;
+    color: rgb(47, 47, 47);
+    align-self: center;
   }
   .intro .intro__occupation {
-    grid-area: occupation;
     font-size: 4rem;
-    padding: 0 15rem 0 0;
-    text-align: left;
+    color: #119539;
+    text-align: center;
+    width: 70rem;
+    padding: 2rem;
   }
 }
-
 .footer {
   width: 100vw;
   height: 13.5rem;
