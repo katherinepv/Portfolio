@@ -8,6 +8,7 @@
         padding: 1rem;
         text-align: center;
     }
+
     .about__image {
         // position: absolute;
         width: 20rem;
@@ -16,6 +17,7 @@
         margin-left: auto;
         padding: 1rem;
     }
+
     .about__paragraph {
         font-family: $secondary-font;
         color: $text-color-secondary;
@@ -23,38 +25,35 @@
         padding: 1rem;
     }
 
+}
 
-    @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+    .about {
         margin: 3rem 11.25rem;
         display: grid;
         grid-template-areas:
-        "image title"
-        "image text";
-        grid-gap: 1rem;
+            "image title"
+            "image text";
 
         .about__image {
             width: 30rem;
             grid-area: image;
         }
-        .about__text {
-            grid-area: text;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5rem;
-        }
+
         .about__title {
             grid-area: title;
             font-size: 3rem;
             text-align: left;
-            padding: 10rem 0 0 10rem;
+            margin: 5rem 0 0 10rem;
+            height: 2rem;
         }
+
         .about__paragraph {
             grid-area: text;
             text-align: justify;
-            padding: 0 0 0 10rem;
+            margin: 0 5rem 0 10rem;
+            // padding: 0 0 0 10rem;
         }
-    
-}
 
+    }
 }

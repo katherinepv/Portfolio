@@ -12,6 +12,7 @@
 .nav-bar {
   text-align: center;
   font-family: "Hind", sans-serif;
+  color: rgb(47, 47, 47);
   height: 3rem;
   margin: 3rem 9rem;
   display: none;
@@ -41,6 +42,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    color: rgb(47, 47, 47);
   }
   .nav-bar .nav-bar__home:hover,
 .nav-bar .nav-bar__about:hover,
@@ -82,37 +84,30 @@
   font-size: 1rem;
   padding: 1rem;
 }
+
 @media screen and (min-width: 1024px) {
   .about {
     margin: 3rem 11.25rem;
     display: grid;
     grid-template-areas: "image title" "image text";
-    grid-gap: 1rem;
   }
   .about .about__image {
     width: 30rem;
     grid-area: image;
   }
-  .about .about__text {
-    grid-area: text;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-  }
   .about .about__title {
     grid-area: title;
     font-size: 3rem;
     text-align: left;
-    padding: 10rem 0 0 10rem;
+    margin: 5rem 0 0 10rem;
+    height: 2rem;
   }
   .about .about__paragraph {
     grid-area: text;
     text-align: justify;
-    padding: 0 0 0 10rem;
+    margin: 0 5rem 0 10rem;
   }
 }
-
 .skills .skills__title {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
@@ -153,16 +148,21 @@
     text-align: center;
   }
   .skills .skills__intro {
-    font-size: 1rem;
-    width: 30.25rem;
+    font-size: 1.2rem;
+    width: 35rem;
     margin: auto;
   }
   .skills .skills__container {
     display: flex;
     flex: auto;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-end;
     gap: 1.5rem;
+    margin: 0 25rem;
+    padding: 0;
+  }
+  .skills .skills__container p {
+    font-size: 1.5rem;
   }
 }
 
