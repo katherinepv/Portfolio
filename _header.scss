@@ -2,6 +2,7 @@
 
 .intro {
     padding-top: 1rem;
+
     .intro__name {
         text-align: left;
         font-family: $primary-font;
@@ -9,6 +10,7 @@
         color: $text-color-secondary;
         padding: 1rem;
     }
+
     .intro__occupation {
         text-align: left;
         font-family: $primary-font;
@@ -16,54 +18,55 @@
         color: $text-color;
         padding: 1rem;
     }
+
     .intro__image {
         display: none;
 
     }
 
-@media screen and (min-width: 1024px) {
-    .intro__image {
-        display: unset;
-    }
-        
-    margin: 3rem 11.5rem;
-    display: grid;
-        grid-template-areas:
-        "name image"
+    @media screen and (min-width: 1024px) {
+        .intro__image {
+            display: unset;
+        }
+
+        margin: 3rem 11.5rem;
+        display: grid;
+        grid-template-areas: "name image"
         "occupation image";
         grid-gap: 1rem;
 
-    .intro {
-        display: grid;
-        grid-template-areas:
-        "name image"
-        "occupation image";
-        // grid-gap: 20rem;
-    }
-    
-    .intro__image {
-        grid-area: image;
-        width: 30rem;
-    
-    }
+        .intro {
+            display: grid;
+            grid-template-areas:
+                "name image"
+                "occupation image";
+            // grid-gap: 20rem;
+        }
 
-    .intro__name {
-        grid-area: name;
-        text-align: start;
-        display: flex;
-        align-items: flex-end;
-        
+        .intro__image {
+            grid-area: image;
+            width: 30rem;
+
+        }
+
+        .intro__name {
+            grid-area: name;
+            text-align: start;
+            display: flex;
+            align-items: flex-end;
+            font-size: 2rem;
+
+        }
+
+        .intro__occupation {
+            grid-area: occupation;
+            font-size: 4rem;
+            padding: 0 15rem 0 0;
+            text-align: left;
+        }
+
+
     }
-
-    .intro__occupation {
-        grid-area: occupation;
-        font-size: 4rem;
-        padding: 0 15rem 0 0;
-        text-align: left;
-    }
-
-
-}
 }
 
 
@@ -87,7 +90,5 @@
 //     .intro__occupation {
 //         grid-area: occupation;
 //     }
-    
+
 // }
-
-

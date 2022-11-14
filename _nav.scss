@@ -7,7 +7,7 @@
     margin: 3rem 9rem;
     display: none;
 }
-    
+
 
 
 @media screen and (min-width: 1024px) {
@@ -15,7 +15,6 @@
         display: unset;
         display: grid;
         grid-template-columns: 10fr 3fr 3fr 3fr 3fr;
-        font-size: 20rem;
 
         .nav-bar__name {
             text-align: left;
@@ -24,7 +23,9 @@
             display: flex;
             justify-content: left;
             align-items: center;
+            font-size: 1.5rem;
         }
+
         .nav-bar__home,
         .nav-bar__about,
         .nav-bar__projects {
@@ -33,11 +34,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 1.5rem;
+        }
+
+        .nav-bar__home:hover,
+        .nav-bar__about:hover,
+        .nav-bar__projects:hover {
+            color: $text-color;
         }
 
         .nav-bar__getInTouch {
             background-color: $foreground-color;
             color: black;
+            font-size: 1.5rem;
             padding: 0.5rem;
             text-decoration: none;
             display: flex;
@@ -50,5 +59,3 @@
         }
     }
 }
-
-

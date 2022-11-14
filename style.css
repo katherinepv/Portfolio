@@ -22,7 +22,6 @@
     display: unset;
     display: grid;
     grid-template-columns: 10fr 3fr 3fr 3fr 3fr;
-    font-size: 20rem;
   }
   .nav-bar .nav-bar__name {
     text-align: left;
@@ -31,6 +30,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    font-size: 1.5rem;
   }
   .nav-bar .nav-bar__home,
 .nav-bar .nav-bar__about,
@@ -40,10 +40,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
+  }
+  .nav-bar .nav-bar__home:hover,
+.nav-bar .nav-bar__about:hover,
+.nav-bar .nav-bar__projects:hover {
+    color: #119539;
   }
   .nav-bar .nav-bar__getInTouch {
     background-color: #dbf3e3;
     color: black;
+    font-size: 1.5rem;
     padding: 0.5rem;
     text-decoration: none;
     display: flex;
@@ -328,6 +335,7 @@
     text-align: start;
     display: flex;
     align-items: flex-end;
+    font-size: 2rem;
   }
   .intro .intro__occupation {
     grid-area: occupation;
