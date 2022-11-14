@@ -349,25 +349,18 @@
 
 @media screen and (min-width: 1024px) {
   .footer {
-    display: grid;
-    grid-template-areas: "email github linkedin cv";
-    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
   }
   .footer .footer__email {
-    grid-area: email;
-    text-align: left;
-    width: 7fr;
+    order: 1;
+    font-size: 1.5rem;
   }
-  .footer .footer__images--github {
-    grid-area: github;
-    width: 1fr;
-  }
-  .footer .footer__images--linkedin {
-    grid-area: linkedin;
-    width: 1fr;
-  }
-  .footer .footer__images--cv {
-    grid-area: cv;
-    width: 1fr;
+  .footer .footer__images {
+    order: 2;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-around;
+    width: 15rem;
   }
 }/*# sourceMappingURL=style.css.map */

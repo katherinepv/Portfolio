@@ -25,60 +25,22 @@
     }
 }
 
-//second attempt that needs reworking
-    @media screen and (min-width: 1024px) {
-        .footer {
-            display: grid;
-            grid-template-areas:
-            "email github linkedin cv";
-            padding: 2rem 5rem;
-            
+@media screen and (min-width: 1024px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
 
-            .footer__email {
-                grid-area: email;
-                text-align: left;
-                width: 7fr;
-            }
-            
-            .footer__images--github {
-                grid-area: github;
-                width: 1fr;
-            }
-            .footer__images--linkedin {
-                grid-area: linkedin;
-                width: 1fr;
-            }
-            .footer__images--cv {
-                grid-area: cv;
-                width: 1fr;
-            }
+        .footer__email {
+            order: 1;
+            font-size: 1.5rem;
+        }
 
-//first attempt
-            // .footer__images {
-            //     grid-area: links;
-            //     align-items: right;
-            // }
+        .footer__images {
+            order: 2;
+            align-items: flex-end;
+            display: flex;
+            justify-content: space-around;
+            width: 15rem;
         }
     }
-
-
-
-    //         display: unset;
-    //         display:
-    //          grid;
-    //         grid-template-areas:
-    //         "email links";
-
-    //     .footer__email {
-    //         grid-area: email;
-    //         display: flex;
-    //         justify-content: left;
-    //     }
-    //     .footer__images {
-    //         grid-area: images;
-    //         display: flex;
-    //         // justify-content: space-between;
-    //         align-self: flex-end;
-    //     }
-    // }
-    // }
+}
