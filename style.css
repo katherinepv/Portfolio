@@ -158,7 +158,9 @@
   }
 }
 
-.projects__secondary {
+.card--four,
+.card--five,
+.card--six {
   display: none;
 }
 
@@ -170,7 +172,9 @@
   padding: 1rem;
 }
 
-.card {
+.card--one,
+.card--two,
+.card--three {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,25 +184,30 @@
   margin: 1rem;
   border-radius: 0.75rem;
 }
-.card .card__image {
+
+.card__image {
   width: 100%;
 }
-.card .card__image-descriptor {
+
+.card__image-descriptor {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
 }
-.card .card__header {
+
+.card__header {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   color: #119539;
 }
-.card .card__paragraph {
+
+.card__paragraph {
   font-size: 1rem;
   font-family: "Hind", sans-serif;
   color: rgb(47, 47, 47);
   padding: 0.5rem;
 }
-.card .card__button, .card .card__button--secondary {
+
+.card__button, .card__button--secondary {
   font-size: 1.25rem;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -210,12 +219,59 @@
   gap: 0.5rem;
   padding: 0.3rem;
 }
+
 @media screen and (min-width: 1024px) {
-  .card #projects__secondary {
-    display: unset;
+  .projects {
+    margin: 4rem 1rem;
+  }
+  .projects .projects__title {
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+  }
+  .card--four,
+.card--five,
+.card--six {
+    display: block;
+  }
+  .card--one,
+.card--two,
+.card--three,
+.card--four,
+.card--five,
+.card--six {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbf3e3;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.75rem;
+  }
+  .projects__cards {
+    display: grid;
+    grid-template-areas: "one two three" "four five six";
+    gap: 0.5rem;
+  }
+  .card--one {
+    grid-area: one;
+  }
+  .card--two {
+    grid-area: two;
+  }
+  .card--three {
+    grid-area: three;
+  }
+  .card--four {
+    grid-area: four;
+  }
+  .card--five {
+    grid-area: five;
+  }
+  .card--six {
+    grid-area: six;
   }
 }
-
 .intro {
   padding-top: 1rem;
 }

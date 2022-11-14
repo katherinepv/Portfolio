@@ -1,6 +1,8 @@
 @use "./variables" as *;
 
-.projects__secondary {
+.card--four,
+.card--five,
+.card--six {
     display: none;
 }
 
@@ -14,7 +16,12 @@
     }
 }
 
-.card {
+.card--one,
+.card--two,
+.card--three {
+// .card--four,
+// .card--five,
+// .card--six {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +30,7 @@
     padding: 1rem;
     margin: 1rem;
     border-radius: 0.75rem;
-
+}
     .card__image {
         width: 100%;
     }
@@ -76,15 +83,72 @@
 
     }
 
+
 @media screen and (min-width: 1024px) {
+    .projects {
+        margin: 4rem 1rem;
+        .projects__title {
+            font-size: 3rem;
+            margin: 0 0 2rem 0;
+        }
+    }
+    
+    
+    
+    .card--four,
+    .card--five,
+    .card--six {
+        display: block;
+    }
+
     
 
-    #projects__secondary {
-        display: unset;
+    .card--one,
+    .card--two,
+    .card--three,
+    .card--four,
+    .card--five,
+    .card--six {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $foreground-color;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 0.75rem;
+    }
+
+    
+
+    .projects__cards {
+        display: grid;
+        grid-template-areas:
+        "one two three"
+        "four five six";
+        gap: 0.5rem;
+    }
+
+    .card--one {
+        grid-area: one;
+    }
+    .card--two {
+        grid-area: two;
+    }
+    .card--three {
+        grid-area: three;
+    }
+    .card--four {
+        grid-area: four;
+    }
+    .card--five {
+        grid-area: five;
+    }
+    .card--six {
+        grid-area: six;
     }
 
     
 }
 
-}
 
