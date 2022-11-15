@@ -1,8 +1,8 @@
 @use "./variables" as *;
 
-.card--four,
-.card--five,
-.card--six {
+.card-four,
+.card-five,
+.card-six {
     display: none;
 }
 
@@ -16,12 +16,12 @@
     }
 }
 
-.card--one,
-.card--two,
-.card--three {
-    // .card--four,
-    // .card--five,
-    // .card--six {
+.card-one,
+.card-two,
+.card-three {
+    // .card-four,
+    // .card-five,
+    // .card-six {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,8 +54,7 @@
     padding: 0.5rem;
 }
 
-.card__button,
-.card__button--secondary {
+.card__button {
     font-size: 1.25rem;
     font-weight: bold;
     font-family: $primary-font;
@@ -82,18 +81,18 @@
         }
     }
 
-    .card--four,
-    .card--five,
-    .card--six {
+    .card-four,
+    .card-five,
+    .card-six {
         display: block;
     }
 
-    .card--one,
-    .card--two,
-    .card--three,
-    .card--four,
-    .card--five,
-    .card--six {
+    .card-one,
+    .card-two,
+    .card-three,
+    .card-four,
+    .card-five,
+    .card-six {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -116,32 +115,32 @@
         grid-area: one;
     }
 
-    .card--two {
+    .card-two {
         grid-area: two;
     }
 
-    .card--three {
+    .card-three {
         grid-area: three;
     }
 
-    .card--four {
+    .card-four {
         grid-area: four;
     }
 
-    .card--five {
+    .card-five {
         grid-area: five;
     }
 
-    .card--six {
+    .card-six {
         grid-area: six;
     }
 
-    .card--one:hover,
-    .card--two:hover,
-    .card--three:hover,
-    .card--four:hover,
-    .card--five:hover,
-    .card--six:hover {
+    .card-one:hover,
+    .card-two:hover,
+    .card-three:hover,
+    .card-four:hover,
+    .card-five:hover,
+    .card-six:hover {
         box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem $text-color;
     }
 

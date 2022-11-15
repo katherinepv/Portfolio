@@ -172,9 +172,9 @@
   }
 }
 
-.card--four,
-.card--five,
-.card--six {
+.card-four,
+.card-five,
+.card-six {
   display: none;
 }
 
@@ -186,9 +186,9 @@
   padding: 1rem;
 }
 
-.card--one,
-.card--two,
-.card--three {
+.card-one,
+.card-two,
+.card-three {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,8 +221,7 @@
   padding: 0.5rem;
 }
 
-.card__button,
-.card__button--secondary {
+.card__button {
   font-size: 1.25rem;
   font-weight: bold;
   font-family: "Manrope", sans-serif;
@@ -233,8 +232,7 @@
   border-color: #119539;
   border-width: 0.3rem;
 }
-.card__button img,
-.card__button--secondary img {
+.card__button img {
   padding: 0.2rem 0 0 0;
 }
 
@@ -246,17 +244,17 @@
     font-size: 3rem;
     margin: 0 0 2rem 0;
   }
-  .card--four,
-.card--five,
-.card--six {
+  .card-four,
+.card-five,
+.card-six {
     display: block;
   }
-  .card--one,
-.card--two,
-.card--three,
-.card--four,
-.card--five,
-.card--six {
+  .card-one,
+.card-two,
+.card-three,
+.card-four,
+.card-five,
+.card-six {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,27 +272,27 @@
   .card--one {
     grid-area: one;
   }
-  .card--two {
+  .card-two {
     grid-area: two;
   }
-  .card--three {
+  .card-three {
     grid-area: three;
   }
-  .card--four {
+  .card-four {
     grid-area: four;
   }
-  .card--five {
+  .card-five {
     grid-area: five;
   }
-  .card--six {
+  .card-six {
     grid-area: six;
   }
-  .card--one:hover,
-.card--two:hover,
-.card--three:hover,
-.card--four:hover,
-.card--five:hover,
-.card--six:hover {
+  .card-one:hover,
+.card-two:hover,
+.card-three:hover,
+.card-four:hover,
+.card-five:hover,
+.card-six:hover {
     box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #119539;
   }
 }
