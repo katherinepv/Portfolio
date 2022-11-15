@@ -16,6 +16,7 @@
         display: unset;
         display: grid;
         grid-template-columns: 10fr 3fr 3fr 3fr 3fr;
+        gap: 0.2rem;
 
         .nav-bar__name {
             text-align: left;
@@ -43,6 +44,10 @@
         .nav-bar__about:hover,
         .nav-bar__projects:hover {
             color: $text-color;
+            border-style: solid;
+            border-color: $text-color;
+            border-width: 0.2rem;
+            border-radius: 0.8rem;
         }
 
         .nav-bar__getInTouch {

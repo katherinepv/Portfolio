@@ -24,6 +24,7 @@
     display: unset;
     display: grid;
     grid-template-columns: 10fr 3fr 3fr 3fr 3fr;
+    gap: 0.2rem;
   }
   .nav-bar .nav-bar__name {
     text-align: left;
@@ -49,6 +50,10 @@
 .nav-bar .nav-bar__about:hover,
 .nav-bar .nav-bar__projects:hover {
     color: #119539;
+    border-style: solid;
+    border-color: #119539;
+    border-width: 0.2rem;
+    border-radius: 0.8rem;
   }
   .nav-bar .nav-bar__getInTouch {
     background-color: #dbf3e3;
@@ -325,7 +330,7 @@
     align-items: center;
     margin: auto;
     width: 100rem;
-    height: 53rem;
+    height: 45rem;
     background-color: #dbf3e3;
     text-align: center;
   }
