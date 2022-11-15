@@ -78,7 +78,7 @@
         align-items: center;
         margin: auto;
         width: 100rem;
-        height: 45rem;
+        height: 50rem;
         background-color: $foreground-color;
         text-align: center;
 
@@ -94,7 +94,13 @@
             text-align: center;
             width: 70rem;
             padding: 2rem;
+
+            .intro__occupation--emphasis {
+                font-size: 4rem;
+                font-style: italic;
+            }
         }
+
 
         .intro__button {
             display: unset;
@@ -111,6 +117,11 @@
             border-radius: 0.8rem;
             margin: 2rem;
             box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem $text-color;
+        }
+
+        .intro__button:hover {
+            border-color: $text-color-darker;
+            box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem $text-color-darker;
         }
     }
 }
