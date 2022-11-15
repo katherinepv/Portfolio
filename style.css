@@ -306,7 +306,8 @@
   color: rgb(47, 47, 47);
   padding: 1rem;
 }
-.intro .intro__occupation {
+.intro .intro__occupation,
+.intro .intro__occupation--emphasis {
   text-align: left;
   font-family: "Manrope", sans-serif;
   font-size: 3rem;

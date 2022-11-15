@@ -11,12 +11,15 @@
         padding: 1rem;
     }
 
-    .intro__occupation {
+    .intro__occupation,
+    .intro__occupation--emphasis {
         text-align: left;
         font-family: $primary-font;
         font-size: 3rem;
         color: $text-color;
         padding: 1rem;
+
+
     }
 
     .intro__button {
