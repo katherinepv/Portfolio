@@ -1,6 +1,9 @@
 @use "./variables" as *;
 
 .about {
+    display: flex;
+    flex-direction: column;
+
     .about__title {
         font-family: $primary-font;
         color: $text-color;
@@ -16,6 +19,7 @@
         margin-right: auto;
         margin-left: auto;
         padding: 1rem;
+        border-radius: 2rem;
     }
 
     .about__paragraph {
@@ -30,26 +34,23 @@
 @media screen and (min-width: 1024px) {
     .about {
         margin: 3rem 11.25rem;
-        display: grid;
-        grid-template-areas:
-            "image title"
-            "image text";
+        display: flex;
+        flex-direction: column;
 
         .about__image {
-            width: 30rem;
-            grid-area: image;
+            width: 20rem;
+            margin: 1rem auto;
+            align-self: center;
+            border-radius: 3rem;
         }
 
         .about__title {
-            grid-area: title;
             font-size: 3rem;
-            text-align: left;
-            margin: 5rem 0 0 10rem;
+            margin: 2rem 0 2rem 0;
             height: 2rem;
         }
 
         .about__paragraph {
-            grid-area: text;
             text-align: justify;
             margin: 0 5rem 0 10rem;
             // padding: 0 0 0 10rem;

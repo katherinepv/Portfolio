@@ -7,19 +7,7 @@
 @use "./header";
 @use "./footer";
 
-// .technical-skills {
-//     display: grid;
-//     grid-template-rows: 1fr 1fr 1fr;
-//     grid-template-columns: 1fr 1fr 1fr;
-// }
-
-// .footer {
-//     display: grid;
-//     // grid-template-columns:1fr 1fr 1fr;
-//     // grid-template-rows: 1fr 1fr;
-
-// }
-// .footer.last-child {
-//     grid-column-start: 1;
-//     grid-column-end: 4;
-// }
+body {
+    display: flex;
+    flex-direction: column;
+}

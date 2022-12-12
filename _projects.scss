@@ -1,10 +1,10 @@
 @use "./variables" as *;
 
-.card-four,
-.card-five,
-.card-six {
-    display: none;
-}
+// // .card-four,
+// .card-five,
+// .card-six {
+//     display: none;
+// }
 
 .projects {
     .projects__title {
@@ -14,59 +14,64 @@
         font-size: 2rem;
         padding: 1rem;
     }
-}
 
-.card-one,
-.card-two,
-.card-three {
-    // .card-four,
-    // .card-five,
-    // .card-six {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $foreground-color;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 0.75rem;
-}
 
-.card__image {
-    width: 100%;
-}
+    .card-one,
+    .card-two,
+    .card-three,
+    .card-four {
+        // .card-four,
+        // .card-five,
+        // .card-six {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $foreground-color;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 0.75rem;
 
-.card__image-descriptor {
-    font-size: 1rem;
-    font-family: $primary-font;
-}
+    }
 
-.card__header {
-    font-size: 2rem;
-    font-family: $primary-font;
-    color: $text-color;
-}
+    .card__image {
+        width: 100%;
+    }
 
-.card__paragraph {
-    font-size: 1rem;
-    font-family: $secondary-font;
-    color: $text-color-secondary;
-    padding: 0.5rem;
-}
+    .card__image-descriptor {
+        font-size: 1rem;
+        font-family: $primary-font;
+    }
 
-.card__button {
-    font-size: 1.25rem;
-    font-weight: bold;
-    font-family: $primary-font;
-    color: $text-color;
-    text-align: start;
-    background-color: $background-color;
-    border-radius: 0.75rem;
-    border-color: $text-color;
-    border-width: 0.3rem;
+    .card__header {
+        font-size: 2rem;
+        font-family: $primary-font;
+        color: $text-color;
+    }
 
-    img {
-        padding: 0.2rem 0 0 0;
+    .card__paragraph {
+        font-size: 1rem;
+        font-family: $secondary-font;
+        color: $text-color-secondary;
+        padding: 0.5rem;
+    }
+
+    .card__button {
+        font-size: 1.25rem;
+        font-weight: bold;
+        font-family: $primary-font;
+        color: $text-color;
+        text-align: start;
+        background-color: $background-color;
+        border-style: solid;
+        border-radius: 0.75rem;
+        border-color: $text-color;
+        border-width: 0.3rem;
+        text-decoration: none;
+
+        img {
+            padding: 0.2rem 0 0 0;
+        }
     }
 }
 
@@ -79,69 +84,44 @@
             font-size: 3rem;
             margin: 0 0 2rem 0;
         }
-    }
 
-    .card-four,
-    .card-five,
-    .card-six {
-        display: block;
-    }
 
-    .card-one,
-    .card-two,
-    .card-three,
-    .card-four,
-    .card-five,
-    .card-six {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $foreground-color;
-        padding: 1rem;
-        margin: 1rem;
-        border-radius: 0.75rem;
-    }
+        // .card-four,
+        // .card-five,
+        // .card-six {
+        //     display: block;
+        // }
 
-    .projects__cards {
-        display: grid;
-        grid-template-areas:
-            "one two three"
-            "four five six";
-        gap: 0.5rem;
-    }
+        .projects__cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
 
-    .card--one {
-        grid-area: one;
-    }
 
-    .card-two {
-        grid-area: two;
-    }
+            .card-one,
+            .card-two,
+            .card-three,
+            .card-four {
+                // .card-five,
+                // .card-six {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $foreground-color;
+                padding: 1rem;
+                margin: 1rem;
+                border-radius: 0.75rem;
+            }
 
-    .card-three {
-        grid-area: three;
-    }
+            .card-one:hover,
+            .card-two:hover,
+            .card-three:hover,
+            .card-four:hover {
+                // .card-five:hover,
+                // .card-six:hover {
+                box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem $text-color;
+            }
 
-    .card-four {
-        grid-area: four;
+        }
     }
-
-    .card-five {
-        grid-area: five;
-    }
-
-    .card-six {
-        grid-area: six;
-    }
-
-    .card-one:hover,
-    .card-two:hover,
-    .card-three:hover,
-    .card-four:hover,
-    .card-five:hover,
-    .card-six:hover {
-        box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem $text-color;
-    }
-
 }

@@ -70,6 +70,10 @@
     border-radius: 0.8rem;
   }
 }
+.about {
+  display: flex;
+  flex-direction: column;
+}
 .about .about__title {
   font-family: "Manrope", sans-serif;
   color: #119539;
@@ -83,6 +87,7 @@
   margin-right: auto;
   margin-left: auto;
   padding: 1rem;
+  border-radius: 2rem;
 }
 .about .about__paragraph {
   font-family: "Hind", sans-serif;
@@ -94,22 +99,21 @@
 @media screen and (min-width: 1024px) {
   .about {
     margin: 3rem 11.25rem;
-    display: grid;
-    grid-template-areas: "image title" "image text";
+    display: flex;
+    flex-direction: column;
   }
   .about .about__image {
-    width: 30rem;
-    grid-area: image;
+    width: 20rem;
+    margin: 1rem auto;
+    align-self: center;
+    border-radius: 3rem;
   }
   .about .about__title {
-    grid-area: title;
     font-size: 3rem;
-    text-align: left;
-    margin: 5rem 0 0 10rem;
+    margin: 2rem 0 2rem 0;
     height: 2rem;
   }
   .about .about__paragraph {
-    grid-area: text;
     text-align: justify;
     margin: 0 5rem 0 10rem;
   }
@@ -172,12 +176,6 @@
   }
 }
 
-.card-four,
-.card-five,
-.card-six {
-  display: none;
-}
-
 .projects .projects__title {
   font-family: "Manrope", sans-serif;
   color: #119539;
@@ -185,10 +183,10 @@
   font-size: 2rem;
   padding: 1rem;
 }
-
-.card-one,
-.card-two,
-.card-three {
+.projects .card-one,
+.projects .card-two,
+.projects .card-three,
+.projects .card-four {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -198,41 +196,38 @@
   margin: 1rem;
   border-radius: 0.75rem;
 }
-
-.card__image {
+.projects .card__image {
   width: 100%;
 }
-
-.card__image-descriptor {
+.projects .card__image-descriptor {
   font-size: 1rem;
   font-family: "Manrope", sans-serif;
 }
-
-.card__header {
+.projects .card__header {
   font-size: 2rem;
   font-family: "Manrope", sans-serif;
   color: #119539;
 }
-
-.card__paragraph {
+.projects .card__paragraph {
   font-size: 1rem;
   font-family: "Hind", sans-serif;
   color: rgb(47, 47, 47);
   padding: 0.5rem;
 }
-
-.card__button {
+.projects .card__button {
   font-size: 1.25rem;
   font-weight: bold;
   font-family: "Manrope", sans-serif;
   color: #119539;
   text-align: start;
   background-color: white;
+  border-style: solid;
   border-radius: 0.75rem;
   border-color: #119539;
   border-width: 0.3rem;
+  text-decoration: none;
 }
-.card__button img {
+.projects .card__button img {
   padding: 0.2rem 0 0 0;
 }
 
@@ -244,17 +239,14 @@
     font-size: 3rem;
     margin: 0 0 2rem 0;
   }
-  .card-four,
-.card-five,
-.card-six {
-    display: block;
+  .projects .projects__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  .card-one,
-.card-two,
-.card-three,
-.card-four,
-.card-five,
-.card-six {
+  .projects .projects__cards .card-one,
+.projects .projects__cards .card-two,
+.projects .projects__cards .card-three,
+.projects .projects__cards .card-four {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,35 +256,10 @@
     margin: 1rem;
     border-radius: 0.75rem;
   }
-  .projects__cards {
-    display: grid;
-    grid-template-areas: "one two three" "four five six";
-    gap: 0.5rem;
-  }
-  .card--one {
-    grid-area: one;
-  }
-  .card-two {
-    grid-area: two;
-  }
-  .card-three {
-    grid-area: three;
-  }
-  .card-four {
-    grid-area: four;
-  }
-  .card-five {
-    grid-area: five;
-  }
-  .card-six {
-    grid-area: six;
-  }
-  .card-one:hover,
-.card-two:hover,
-.card-three:hover,
-.card-four:hover,
-.card-five:hover,
-.card-six:hover {
+  .projects .projects__cards .card-one:hover,
+.projects .projects__cards .card-two:hover,
+.projects .projects__cards .card-three:hover,
+.projects .projects__cards .card-four:hover {
     box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #119539;
   }
 }
@@ -408,4 +375,8 @@
     justify-content: space-around;
     width: 15rem;
   }
+}
+body {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
