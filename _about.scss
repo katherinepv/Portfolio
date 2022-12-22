@@ -33,27 +33,42 @@
 
 @media screen and (min-width: 1024px) {
     .about {
-        margin: 3rem 11.25rem;
-        display: flex;
-        flex-direction: column;
+        margin: 3rem 12rem;
+        display: grid;
+        grid-template-areas:
+            "title image"
+            "text image";
+        gap: 1rem;
 
-        .about__image {
-            width: 20rem;
-            margin: 1rem auto;
-            align-self: center;
-            border-radius: 3rem;
-        }
+        // .about__content {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-around;
+        //     align-content: center;
+        // }
 
         .about__title {
             font-size: 3rem;
-            margin: 2rem 0 2rem 0;
-            height: 2rem;
+            // margin: 2rem 0 2rem 0;
+            // height: 2rem;
+            grid-area: title;
+            text-align: center;
         }
 
         .about__paragraph {
             text-align: justify;
-            margin: 0 5rem 0 10rem;
+            // margin: 0 5rem 0 10rem;
             // padding: 0 0 0 10rem;
+            grid-area: text;
+            margin: 0 2rem;
+        }
+
+        .about__image {
+            max-width: 22rem;
+            // margin: 1rem auto;
+            align-self: center;
+            border-radius: 3rem;
+            grid-area: image;
         }
 
     }

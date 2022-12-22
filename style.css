@@ -98,24 +98,26 @@
 
 @media screen and (min-width: 1024px) {
   .about {
-    margin: 3rem 11.25rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .about .about__image {
-    width: 20rem;
-    margin: 1rem auto;
-    align-self: center;
-    border-radius: 3rem;
+    margin: 3rem 12rem;
+    display: grid;
+    grid-template-areas: "title image" "text image";
+    gap: 1rem;
   }
   .about .about__title {
     font-size: 3rem;
-    margin: 2rem 0 2rem 0;
-    height: 2rem;
+    grid-area: title;
+    text-align: center;
   }
   .about .about__paragraph {
     text-align: justify;
-    margin: 0 5rem 0 10rem;
+    grid-area: text;
+    margin: 0 2rem;
+  }
+  .about .about__image {
+    max-width: 22rem;
+    align-self: center;
+    border-radius: 3rem;
+    grid-area: image;
   }
 }
 .skills .skills__title {
@@ -189,15 +191,29 @@
 .projects .card-four {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #dbf3e3;
   padding: 1rem;
   margin: 1rem;
   border-radius: 0.75rem;
+  height: 35rem;
 }
-.projects .card__image {
-  width: 100%;
+.projects .card__mobile-image {
+  height: auto;
+  max-width: 10rem;
+  margin: 1rem auto;
+}
+.projects .card__web-image {
+  max-height: 12rem;
+  width: auto;
+  margin: 1rem auto;
+}
+.projects .card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 .projects .card__image-descriptor {
   font-size: 1rem;
@@ -243,23 +259,42 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .projects .projects__cards .card-one,
-.projects .projects__cards .card-two,
-.projects .projects__cards .card-three,
-.projects .projects__cards .card-four {
+  .projects .card__image {
+    max-height: 17rem;
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    margin: 1rem auto;
+  }
+  .projects .card-one,
+.projects .card-two,
+.projects .card-three,
+.projects .card-four {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #dbf3e3;
     padding: 1rem;
     margin: 1rem;
     border-radius: 0.75rem;
+    height: 37rem;
   }
-  .projects .projects__cards .card-one:hover,
-.projects .projects__cards .card-two:hover,
-.projects .projects__cards .card-three:hover,
-.projects .projects__cards .card-four:hover {
+  .projects .card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .projects .card__buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .projects .card-one:hover,
+.projects .card-two:hover,
+.projects .card-three:hover,
+.projects .card-four:hover {
     box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem #119539;
   }
 }
@@ -295,8 +330,8 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 100rem;
-    height: 50rem;
+    width: 95%;
+    height: 80vh;
     background-color: #dbf3e3;
     text-align: center;
   }

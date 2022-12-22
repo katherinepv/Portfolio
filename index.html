@@ -9,83 +9,77 @@
   </head>
   <body>
     <nav class="nav-bar">
-      <h1 class="nav-bar__name">Katherine Pilozo Villacis</h1>
+      <h2 class="nav-bar__name">Katherine Pilozo Villacis</h2>
       <a class="nav-bar__home" href="#home">Home</a>
       <a class="nav-bar__about" href="#about">About</a>
       <a class="nav-bar__projects" href="#projects">Projects</a>
       <a class="nav-bar__getInTouch" href="#get-in-touch">Get In Touch</a>
     </nav>
-    <header class="intro" id="home">
-      <h1 class="intro__name">&#128513 Hey! I'm Katherine Pilozo Villacis.</h1>
-      <h2 class="intro__occupation">
-        A Junior <span class="intro__occupation--emphasis">Software Developer</span> based in London, England.
-      </h2>
-      <a class="intro__button" href="#projects">Take a look at my work &#10549</a>
-      <img
-        class="intro__image"
-        src="programmer_icon.png"
-        alt="Female Software Developer"
-        width="300px"
-      />
-    </header>
     <main>
+      <header class="intro" id="home">
+        <h1 class="intro__name">&#128513 Hey! I'm Katherine Pilozo Villacis.</h1>
+        <h2 class="intro__occupation">
+          A Junior <span class="intro__occupation--emphasis">Software Developer</span> based in London, England.
+        </h2>
+        <a class="intro__button" href="#projects">Take a look at my work &#10549</a>
+      </header>
       <div class="about" id="about">
-        <h3 class="about__title">About Me</h3>
+      <!-- <div class="about__content"> -->
+        <h2 class="about__title">About Me</h2>
         <img
           class="about__image"
           src="kat_portfolio_pic.png"
           alt="Katherine"
         />
         <div class="about__paragraph">
-          <p >
-            I'm an ambitious and adaptable indiviudual with a passion for learning new technologies.
-I thrive in environments that will both challenge me and provide opportunity for continuous learning and growth.</p> <br>
-<p>I work collaboratively within a team but am able to work alone as required.
-</p>
-<br>
-<p>I am due to complete the _nology full stack course  which has equipped me with a bountiful skillset and reinforced my drive to pursue a career in software development.
-          </p>
+          <p>
+            Hello! I'm Katherine. I am due to complete the _nology full stack course which has equipped me with a bountiful skillset and reinforced my drive to pursue a career in software development.</p>
+          <br>
+          <p>I'm excellent at organisation, problem solving and meeting deadlines. This, along with having the knowledge and skills to make webistes and applications, enables me to create engaging products for clients.</p>
+          <br>
+          <p>I have a passion for learning new technologies and I'm always looking for opportunities to expand upon my skills. Check out my <a href="#projects">projects</a> below. Feel free to <a href="mailto:katherine.villacis@nology.io">contact me</a> if you have any questions.</p>
+        </div>
       </div>
-      </div>
+      <!-- </div> -->
       <div class="skills">
-        <h4 class="skills__title">Technical Skills</h4>
+        <h2 class="skills__title">Technical Skills</h2>
         <p class="skills__intro">
           I am currently being trained in the following skillset:
         </p>
         <div class="skills__container">
-          <div class="skills__container--item">
+          <div class="skills__item">
             <img src="VectorSpringBoot.png" alt="Spring Boot Logo" />
             <p>Spring Boot</p>
           </div>
-          <div class="skills__container--item">
+          <div class="skills__item">
             <img src="VectorJava.png" alt="Java Logo" />
             <p>Java</p>
           </div>
-          <div class="skills__container--item">
+          <div class="skills__item">
             <img src="GroupReact.png" alt="React Logo" />
             <p>React</p>
           </div>
-          <div class="skills__container--item">
+          <div class="skills__item">
             <img src="LogoBEM.png" alt="BEM Logo" />
             <p>BEM</p>
           </div>
-          <div class="skills__container--item">
+          <div class="skills__item">
             <img src="VectorCSS3.png" alt="SCSS Logo" />
             <p>SCSS</p>
           </div>
-          <div class="skills__container--item">
+          <div class="skills__item">
             <img src="VectorJS.png" alt="JavaScript Logo" />
             <p>JavaScript</p>
           </div>
-          <div class="skills__container--item">
+          <div class="skills__item">
             <img src="VectorCSS3.png" alt="CSS3 Logo" />
             <p>CSS3</p>
           </div>
-          <div class="skills__container--item">
+          <div class="skills__item">
             <img src="VectorHTML5.png" alt="HTML5 Logo" />
             <p>HTML5</p>
           </div>
-          <div class="skills__container--item">
+          <div class="skills__item">
             <img src="VectorGit.png" alt="Git Logo" />
             <p>Git</p>
           </div>
@@ -93,63 +87,63 @@ I thrive in environments that will both challenge me and provide opportunity for
       </div>
 
       <div id="projects" class="projects">
-        <h1 class="projects__title" >My Projects</h1>
+        <h2 class="projects__title" >My Projects</h2>
         <div class="projects__cards">
         <div class="card-one">
-          <img class="card__image" src="Imagewebpage.png" alt="Project Image" width="700px" />
-          <main class="card__content">
-            <h2 class="card__image-descriptor">HTML / CSS</h2>
-            <h3 class="card__header">Portfolio Website</h3>
+          <img class="card__web-image" src="portfolio-screenshot.png" alt="Project Image" width="700px" />
+          <div class="card__content">
+            <h3 class="card__image-descriptor">HTML / CSS</h3>
+            <h4 class="card__header">Portfolio Website</h4>
             <p class="card__paragraph">
               Built using correct version control and modern coding standards, and deployed live using a CI pipeline.
             </p>
+            <div class="card__buttons">
             <a class="card__button" href="https://github.com/katherinepv/Portfolio" target="_blank">Code <img class="card__button--image" src="VectorcodeSymbol.png" alt="Code Symbol"></a>
             <a class="card__button" href="https://katherinepv.github.io/Portfolio/" target="_blank">Preview <img src="VectorcodeSymbol.png" alt="Code Symbol"></a>
-            <!-- <button class="card__button">Code <img class="card__button--image" src="VectorcodeSymbol.png" alt="Code Symbol"  ></button>
-            <button class="card__button">Preview <img src="VectorcodeSymbol.png" alt="Code Symbol"></button> -->
-          </main>
+          </div>
+          </div>
         </div>
         <div class="card-two">
-          <img class="card__image" src="Imagewebpage.png" alt="Project Image" width="700px" />
-          <main class="card__content">
-            <h2 class="card__image-descriptor">JavaScript</h2>
-            <h3 class="card__header">Calculator Project</h3>
+          <img class="card__mobile-image" src="calculator-screenshot.png" alt="Project Image" width="700px" />
+          <div class="card__content">
+            <h3 class="card__image-descriptor">JavaScript</h3>
+            <h4 class="card__header">Calculator Project</h4>
             <p class="card__paragraph">
               A browser-based calculator using modern JavaScript programming techniques and DOM manipulation.
             </p>
+            <div class="card__buttons">
             <a class="card__button" href="https://github.com/katherinepv/Calculator" target="_blank">Code <img src="VectorcodeSymbol.png" alt="Code Symbol"></a>
             <a class="card__button" href="https://katherinepv.github.io/Calculator/" target="_blank">Preview <img src="VectorcodeSymbol.png" alt="Code Symbol"></a>
-            <!-- <button class="card__button">Code <img src="VectorcodeSymbol.png" alt="Code Symbol"></button>
-            <button class="card__button">Preview <img src="VectorcodeSymbol.png" alt="Code Symbol"></button> -->
-          </main>
+          </div>
+          </div>
         </div>
         <div class="card-three">
-          <img class="card__image" src="Imagewebpage.png" alt="Project Image" width="700px" />
-          <main class="card__content">
-            <h2 class="card__image-descriptor">JavaScript</h2>
-            <h3 class="card__header">Game Project</h3>
+          <img class="card__mobile-image" src="hangman-screenshot.png" alt="Project Image" width="700px" />
+          <div class="card__content">
+            <h3 class="card__image-descriptor">JavaScript</h3>
+            <h4 class="card__header">Game Project</h4>
             <p class="card__paragraph">
               A browser-based hangman game using modern JavaScript programming techniques and DOM manipulation.
             </p>
+            <div class="card__buttons">
             <a class="card__button" href="https://github.com/katherinepv/hangman-game" target="_blank">Code <img src="VectorcodeSymbol.png" alt="Code Symbol"></a>
             <a class="card__button" href="https://katherinepv.github.io/hangman-game/" target="_blank">Preview <img src="VectorcodeSymbol.png" alt="Code Symbol"></a>
-            <!-- <button class="card__button">Code <img src="VectorcodeSymbol.png" alt="Code Symbol"></button>
-            <button class="card__button">Preview <img src="VectorcodeSymbol.png" alt="Code Symbol"></button> -->
-          </main>
+          </div>
+          </div>
         </div>
         <div class="card-four">
-          <img class="card__image" src="Imagewebpage.png" alt="Project Image" width="700px" />
-          <main class="card__content">
-            <h2 class="card__image-descriptor">REACT</h2>
-            <h3 class="card__header">API Project</h3>
+          <img class="card__web-image" src="beer-api-screenshot.png" alt="Project Image" width="700px" />
+          <div class="card__content">
+            <h3 class="card__image-descriptor">REACT</h3>
+            <h4 class="card__header">API Project</h4>
             <p class="card__paragraph">
               A React application that pulls data from an external public API and presents it in a multipage layout. (Current project).
             </p>
+            <div class="card__buttons">
             <a class="card__button" href="https://github.com/katherinepv/punk-api-project" target="_blank">Code <img src="VectorcodeSymbol.png" alt="Code Symbol"></a>
             <a class="card__button" href="https://punk-api-project-liard.vercel.app/" target="_blank">Preview <img src="VectorcodeSymbol.png" alt="Code Symbol"></a>
-            <!-- <button class="card__button">Code <img src="VectorcodeSymbol.png" alt="Code Symbol"></button>
-            <button class="card__button">Preview <img src="VectorcodeSymbol.png" alt="Code Symbol"></button> -->
-          </main>
+            </div>
+          </div>
         </div>
         <!-- <div class="card-five">
           <img class="card__image" src="Imagewebpage.png" alt="Project Image" width="700px" />
