@@ -86,7 +86,6 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding: 1rem;
   border-radius: 2rem;
 }
 .about .about__paragraph {
@@ -95,13 +94,21 @@
   font-size: 1rem;
   padding: 1rem;
 }
+.about .about__paragraph a {
+  text-decoration: none;
+  color: #119539;
+}
 
 @media screen and (min-width: 1024px) {
   .about {
     margin: 3rem 12rem;
     display: grid;
     grid-template-areas: "title image" "text image";
-    gap: 1rem;
+    border-style: none none none solid;
+    border-width: 1.5rem;
+    border-color: #119539;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
   }
   .about .about__title {
     font-size: 3rem;
@@ -111,13 +118,16 @@
   .about .about__paragraph {
     text-align: justify;
     grid-area: text;
-    margin: 0 2rem;
+    margin: 0 0.25rem;
   }
   .about .about__image {
-    max-width: 22rem;
-    align-self: center;
-    border-radius: 3rem;
+    height: inherit;
     grid-area: image;
+    padding: 0rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 0rem;
   }
 }
 .skills .skills__title {
@@ -199,15 +209,11 @@
   border-radius: 0.75rem;
   height: 35rem;
 }
-.projects .card__mobile-image {
-  height: auto;
-  max-width: 10rem;
-  margin: 1rem auto;
-}
-.projects .card__web-image {
-  max-height: 12rem;
-  width: auto;
-  margin: 1rem auto;
+.projects .card__image {
+  width: 90%;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .projects .card__content {
   display: flex;
@@ -260,11 +266,10 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
   .projects .card__image {
-    max-height: 17rem;
-    max-width: -webkit-min-content;
-    max-width: -moz-min-content;
-    max-width: min-content;
-    margin: 1rem auto;
+    width: 80%;
+    aspect-ratio: 1/1;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .projects .card-one,
 .projects .card-two,

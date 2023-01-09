@@ -13,12 +13,10 @@
     }
 
     .about__image {
-        // position: absolute;
         width: 20rem;
         display: block;
         margin-right: auto;
         margin-left: auto;
-        padding: 1rem;
         border-radius: 2rem;
     }
 
@@ -27,6 +25,11 @@
         color: $text-color-secondary;
         font-size: 1rem;
         padding: 1rem;
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+        }
     }
 
 }
@@ -38,38 +41,37 @@
         grid-template-areas:
             "title image"
             "text image";
-        gap: 1rem;
 
-        // .about__content {
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: space-around;
-        //     align-content: center;
-        // }
+        border-style: none none none solid;
+        border-width: 1.5rem;
+        border-color: $text-color;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
 
         .about__title {
             font-size: 3rem;
-            // margin: 2rem 0 2rem 0;
-            // height: 2rem;
             grid-area: title;
             text-align: center;
         }
 
         .about__paragraph {
             text-align: justify;
-            // margin: 0 5rem 0 10rem;
-            // padding: 0 0 0 10rem;
             grid-area: text;
-            margin: 0 2rem;
+            margin: 0 0.25rem;
         }
 
         .about__image {
-            max-width: 22rem;
-            // margin: 1rem auto;
-            align-self: center;
-            border-radius: 3rem;
+            height: inherit;
+            // width: inherit;
+            // align-self: center;
+            // border-radius: 3rem;
             grid-area: image;
-        }
+            padding: 0rem;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 0rem;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 0rem;
 
+        }
     }
 }

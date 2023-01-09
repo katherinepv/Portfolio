@@ -20,7 +20,6 @@
     .card-two,
     .card-three,
     .card-four {
-        // .card-four,
         // .card-five,
         // .card-six {
         display: flex;
@@ -35,23 +34,10 @@
 
     }
 
-    // .card__image {
-    //     width: 100%;
-    // }
-    .card__mobile-image {
-        // max-height: 17rem;
-        height: auto;
-        max-width: 10rem;
-        margin: 1rem auto;
-        // object-fit: scale-down;
-    }
-
-    .card__web-image {
-        max-height: 12rem;
-        width: auto;
-        // max-width: 12rem;
-        margin: 1rem auto;
-        // object-fit: scale-down;
+    .card__image {
+        width: 90%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
     }
 
     .card__content {
@@ -119,14 +105,13 @@
         .projects__cards {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            // max-height: 100%;
-
         }
 
+
         .card__image {
-            max-height: 17rem;
-            max-width: min-content;
-            margin: 1rem auto;
+            width: 80%;
+            aspect-ratio: 1/1;
+            object-fit: contain;
         }
 
 
